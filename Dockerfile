@@ -8,6 +8,7 @@ RUN apt-get update
 
 RUN conda install --quiet --yes \
   'numpy == 1.18.5' \ 
+  'opencv-python'   \ 
    && \
   conda clean --all -f -y  &&\ 
   fix-permissions "${CONDA_DIR}" && \
