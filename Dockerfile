@@ -4,7 +4,7 @@ FROM $BASE_CONTAINER
 USER root
 
 RUN apt-get update
-RUN sudp apt-get install tk-dev libagg-dev
+RUN sudo apt-get install tk-dev libagg-dev
 RUN conda install --quiet --yes \
   'numpy == 1.18.5' \ 
   'opencv-python'   \ 
