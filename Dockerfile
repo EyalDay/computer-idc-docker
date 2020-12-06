@@ -3,9 +3,8 @@ FROM $BASE_CONTAINER
 
 USER root
 
-# ffmpeg for matplotlib anim & dvipng+cm-super for latex labels
 RUN apt-get update
-
+RUN sudp apt-get install tk-dev libagg-dev
 RUN conda install --quiet --yes \
   'numpy == 1.18.5' \ 
   'opencv-python'   \ 
